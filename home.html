@@ -82,78 +82,66 @@
 	</ul>
 </div>
     
-<main class="container text-center">
-  <h1>WELCOME to Lifeforce Project</h1>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#myModalMariadb">
-    Login with MariaDB
-  </button>
-  <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#myModalPostgres">
-    Login with Postgres
-  </button>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html">
+		<img src="img/favicon/android-icon-48x48.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+		Lifeforce v1
+	</a>
+	<button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="webworkers.html">Web workers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="canvas.html">Canvas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Animation</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search" action="index.html" method="GET">
+        <button class="btn btn-outline-success" type="submit">Log out</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="bg-body-tertiary p-5 rounded">
+    <h1>Lifeforce Project v1</h1>
+    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+    <a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/5.3/components/navbar/" role="button">Bootstrap 5.3 - Navbar &raquo;</a>
+	<br><br>
+    <p class="lead">Some documentation for Web Workers.</p>
+    <a class="btn btn-lg btn-primary" href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers" role="button">Using Web Workers &raquo;</a>
+    <a class="btn btn-lg btn-primary" href="https://www.w3schools.com/html/html5_webworkers.asp" role="button">HTML Web Workers API &raquo;</a>
+	<br><br>
+    <p class="lead">Some documentation for Canvas.</p>
+    <a class="btn btn-lg btn-primary" href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage" role="button">Basic Usage &raquo;</a>
+	<a class="btn btn-lg btn-primary" href="https://joshondesign.com/p/books/canvasdeepdive/toc.html" role="button">HTML Canvas Deep Dive &raquo;</a>
+	
+	<br><br>
+	<ul class="list-group">
+	  <li class="list-group-item">Enable Boostrap 5 Navbar</li>
+	  <li class="list-group-item">Create a Favicon</li>
+	  <li class="list-group-item">All JavaScript files folder is "js"</li>
+	  <li class="list-group-item">All CSS files folder is "css"</li>
+	  <li class="list-group-item">All image files folder is "img"</li>
+	  <li class="list-group-item">Examples for HTML5 Web Workers</li>
+	  <li class="list-group-item">Example for HTML5 Canvas</li>
+	  <li class="list-group-item">Log in and Log out pages</li>
+	  <li class="list-group-item">Forms for navigation</li>
+	  <li class="list-group-item">Modals for Log in</li>
+	</ul>
+  </div>
 </main>
-
-  <!-- Modal MariaDB -->
-  <div class="modal fade" id="myModalMariadb" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <img src="img/MariaDB-logo-2.png" alt="Icon" style="height: 30px; margin-right: 10px;">
-		  <h5 class="modal-title" id="modalLabel">Login with MariaDB</h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body">
-		  This is a Bootstrap 5.3 modal. Click outside or on the close button to dismiss.
-		  <form class="" action="home.html" method="GET">
-			<div class="form-floating mb-3">
-			  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="myusername or name@example.com">
-			  <label for="floatingInput">Username or Email Address</label>
-			</div>
-			<div class="form-floating mb-3">
-			  <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-			  <label for="floatingPassword">Password</label>
-			</div>
-			<button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Log in</button>
-			<small class="text-body-secondary">By clicking Log in, you agree to the terms of use.</small>
-		  </form>
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		</div>
-	  </div>
-	</div>
-  </div>
-
-  <!-- Modal Postgres -->
-  <div class="modal fade" id="myModalPostgres" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <img src="img/PostgreSQL-logo-2.png" alt="Icon" style="height: 30px; margin-right: 10px;">
-		  <h5 class="modal-title" id="modalLabel">Login with Postgres</h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body">
-		  This is a Bootstrap 5.3 modal. Click outside or on the close button to dismiss.
-		  <form class="" action="home.html" method="GET">
-			<div class="form-floating mb-3">
-			  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="myusername or name@example.com">
-			  <label for="floatingInput">Username or Email Address</label>
-			</div>
-			<div class="form-floating mb-3">
-			  <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-			  <label for="floatingPassword">Password</label>
-			</div>
-			<button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Log in</button>
-			<small class="text-body-secondary">By clicking Log in, you agree to the terms of use.</small>
-		  </form>
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		</div>
-	  </div>
-	</div>
-  </div>
 
 <script defer src="js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"></script>
 <script defer src="js/offcanvas-navbar.js"></script>
